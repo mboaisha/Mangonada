@@ -1,0 +1,13 @@
+---
+
+# Adding brew to your image
+type: brew
+auto-update: true # auto-update Brew using a systemd service?
+update-interval: 8h # How often to check for updates?
+update-wait-after-boot: 10m # Time delay after boot before the first brew update runs
+auto-upgrade: true # auto-upgrade Brew packages using a systemd service?
+upgrade-interval: 1d
+#nofile-limits: true # Uncomment to override default, which "false"
+#brew-analytics: true # Uncomment to opt-in analytics
+#directpull: true # Uncomment to directly install Homebrew using official installer instead of ublue's cache
+#installer-commit: HEAD # Uncomment and change to select commit when installing Homebrew 

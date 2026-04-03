@@ -1,0 +1,22 @@
+---
+
+# Default installed flatpaks go here
+- type: default-flatpaks
+  configurations:
+    - scope: user
+    - notify: true
+      install:
+        - org.remmina.Remmina # Remote desktop client
+        - io.github.kolunmi.Bazaar # Bazaar "app store"
+        - dev.vencord.Vesktop # Discord client
+        - com.sublimehq.SublimeText # Sublime text editor
+        - com.spotify.Client # Spotify client (music)
+        - com.dropbox.Client # Dropbox cloud storage service
+        - com.bitwarden.desktop # Bitwarden client
+        - com.github.xournalpp.xournalpp # Xournal++ (PDF editing)
+        - com.google.EarthPro # Google Earth
+        - md.obsidian.Obsidian # Obsidian MD
+        - it.mijorus.gearlever # Gear Lever, for app images
+        - com.github.tchx84.Flatseal # Flatseal for flatpak permissions management
+        - org.videolan.VLC # VLC for video
+        - org.localsend.localsend_app # LocalSend (local network file sharing)

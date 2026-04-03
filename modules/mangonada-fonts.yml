@@ -1,0 +1,20 @@
+---
+# yaml-language-server: $schema=https://schema.blue-build.org/modules/fonts-latest.json
+
+# Fonts go here
+type: fonts
+fonts:
+  nerd-fonts:
+    - FiraCode
+    - FiraMono
+    - GeistMono
+    - Hack
+    - Inconsolata
+    - Iosevka
+    - IosevkaTerm
+    - IosevkaTermSlab
+    - JetBrainsMono
+    - Lilex
+    - Mononoki
+    - RobotoMono
+    - ZedMono

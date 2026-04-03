@@ -1,0 +1,8 @@
+---
+
+# "Common" packages
+
+type: dnf
+install:
+  packages:
+    - fastfetch

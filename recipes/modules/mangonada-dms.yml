@@ -1,12 +1,13 @@
 ---
 
 # Install and setup DankMaterialShell
-type: dnf
-repos:
-  copr:
-    enable:
-      avengemedia/dms-git
-install:
-  skip-unavailable: false
-  packages:
-    - dms
+modules:
+  - type: dnf
+    repos:
+      copr:
+        enable:
+          - avengemedia/dms-git
+    install:
+      skip-unavailable: false
+      packages:
+        - dms

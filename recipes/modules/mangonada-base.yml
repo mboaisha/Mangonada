@@ -1,8 +1,8 @@
 ---
 
 # "Common" packages
-
-type: dnf
-install:
-  packages:
-    - fastfetch
+modules:
+  - type: dnf
+    install:
+      packages:
+        - fastfetch

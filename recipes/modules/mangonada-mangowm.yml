@@ -1,18 +1,11 @@
----
-
-## Install and setup mangowm
-
-type: dnf
-repos:
-  files:
-    add:
+- type: dnf
+  repos:
+    files:
       - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-  keys:
-    - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-  cleanup: true
-install:
-  skip-unavailable: false
-  packages:
-    - terra-release
-    - terra-release-extras
-    - mangowm
+    cleanup: true
+  install:
+    skip-unavailable: false
+    packages:
+      - repo: terra
+        packages:
+          - mangowm

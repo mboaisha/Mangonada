@@ -1,8 +1,8 @@
----
-
-type: dnf
-install:
-  packages:
-    - repo: terra
+modules:
+  - type: dnf
+    repos:
+      files:
+        - terra.repo
+    install:
       packages:
         - mangowm

@@ -1,14 +1,8 @@
 ---
 
-- type: dnf
-  repos:
-    files:
-      add:
-        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
-    cleanup: true
-  install:
-    skip-unavailable: false
-    packages:
-      - repo: terra
-        packages:
-          - mangowm
+type: dnf
+install:
+  packages:
+    - repo: terra
+      packages:
+        - mangowm

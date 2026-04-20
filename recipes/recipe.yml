@@ -6,6 +6,7 @@ description: Personal use image
 base-image: ghcr.io/wayblueorg/niri
 image-version: latest # Wayblue only supports "Latest" tag
 
+# Modules list
 modules:
   - from-file: modules/mangonada-base.yml
   - from-file: modules/mangonada-dms.yml

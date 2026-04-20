@@ -1,7 +1,10 @@
+---
+
 - type: dnf
   repos:
     files:
-      - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
+      add:
+        - https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     cleanup: true
   install:
     skip-unavailable: false

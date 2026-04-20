@@ -8,9 +8,9 @@ image-version: latest # Wayblue only supports "Latest" tag
 
 # Modules list
 modules:
-  - from-file: modules/mangonada-base.yml
-  - from-file: modules/mangonada-dms.yml
-  - from-file: modules/mangonada-mangowm.yml
-  - from-file: modules/mangonada-flatpaks.yml
+  - from-file: modules/mangonada-base.yml  
+  - from-file: modules/mangonada-dms.yml # Install Dank Material Shell
+  - from-file: modules/mangonada-mangowm.yml # Install mangowm
+  - from-file: modules/mangonada-flatpaks.yml # Default flatpaks that come preinstalled
   - from-file: modules/mangonada-brew.yml # Enabling Homebrew on image
   - from-file: modules/mangonada-fonts.yml # Adding fonts

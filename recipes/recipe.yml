@@ -3,8 +3,8 @@
 # Meta
 name: mangonada
 description: Personal use image
-base-image: ghcr.io/wayblueorg/niri
-image-version: latest # Wayblue only supports "Latest" tag
+base-image: ghcr.io/ublue-os/base-main:43
+image-version: latest
 
 # Modules list
 modules:

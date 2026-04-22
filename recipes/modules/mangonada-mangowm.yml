@@ -6,3 +6,9 @@ modules:
     install:
       packages:
         - mangowm
+  - type: systemd
+    user:
+      enabled:
+        - dms.service
+
+    

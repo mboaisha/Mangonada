@@ -6,3 +6,10 @@ modules:
     install:
       packages:
         - fastfetch
+# Move files to image
+  - type: files
+    files:
+      - source: system/etc
+        destination: /
+      - source: system/usr
+        destination: /

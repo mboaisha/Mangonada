@@ -11,3 +11,14 @@ modules:
       skip-unavailable: false
       packages:
         - dms
+        - greetd
+  - type: files
+    files:
+      - source: system/etc/greetd
+        destination: /etc/greetd
+  - type: systemd
+    system:
+      enabled:
+        - greetd.service
+      disabled:
+        - gdm.service

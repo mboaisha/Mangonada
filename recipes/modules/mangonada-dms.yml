@@ -7,10 +7,12 @@ modules:
       copr:
         enable:
           - avengemedia/dms-git
+          - avengemedia/danklinux
     install:
       skip-unavailable: false
       packages:
         - dms
+        - dms-greeter
         - greetd
   - type: files
     files:

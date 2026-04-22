@@ -3,3 +3,4 @@ cosign.private
 /Containerfile
 cosign.key
 *.swp
+CLAUDE.md

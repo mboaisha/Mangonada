@@ -10,6 +10,6 @@ modules:
   - type: files
     files:
       - source: system/etc
-        destination: /
+        destination: /etc
       - source: system/usr
-        destination: /
+        destination: /usr

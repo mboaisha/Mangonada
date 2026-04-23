@@ -6,6 +6,11 @@ modules:
     install:
       packages:
         - fastfetch
+        - foot
+        - wl-clipboard
+        - firefox
+        - grim
+        - slurp
 # Move files to image
   - type: files
     files:

@@ -12,6 +12,14 @@ modules:
       packages:
         - ly
         - brightnessctl
+  # Re-overlay /etc/pam.d/ly AFTER the ly package install above. The base
+  # module's blanket files overlay runs before any package installs, so the
+  # ly package would otherwise clobber our PAM file (which adds the
+  # mangonada-seed-home pam_exec hook needed to seed /etc/skel into $HOME).
+  - type: files
+    files:
+      - source: system/etc/pam.d/ly
+        destination: /etc/pam.d/ly
   - type: systemd
     system:
       enabled:

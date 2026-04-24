@@ -15,6 +15,8 @@ modules:
   - type: systemd
     system:
       enabled:
-        - ly.service
+        # ly ships a template unit; instantiate on tty1 (the TTY gdm used to own).
+        # `Conflicts=getty@%i.service` in ly@.service displaces the default getty.
+        - ly@tty1.service
       disabled:
         - gdm.service

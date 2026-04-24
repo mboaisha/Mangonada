@@ -4,3 +4,7 @@ cosign.private
 cosign.key
 *.swp
 CLAUDE.md
+
+# Claude Code local state
+.claude/
+memory/

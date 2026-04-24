@@ -1,0 +1,10 @@
+#!/bin/sh
+# Seed missing dotfiles from /etc/skel into $HOME on login.
+# Runs via pam_exec (seteuid) so files land owned by the logging-in user.
+# -n (no-clobber) means user edits are never overwritten on subsequent logins.
+set -u
+[ -n "${HOME:-}" ] || exit 0
+[ -d "$HOME" ]    || exit 0
+[ -d /etc/skel ]  || exit 0
+cp -rn /etc/skel/. "$HOME/" 2>/dev/null || true
+exit 0

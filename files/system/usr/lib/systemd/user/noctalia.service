@@ -5,6 +5,6 @@ After=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/noctalia-shell
+ExecStart=/usr/bin/quickshell -c noctalia-shell
 Restart=on-failure
 RestartSec=5

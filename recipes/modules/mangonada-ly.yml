@@ -1,0 +1,20 @@
+---
+
+# Install and enable the ly TUI display manager
+modules:
+  - type: dnf
+    repos:
+      copr:
+        enable:
+          - u2fsdgvkx1/ly
+    install:
+      skip-unavailable: false
+      packages:
+        - ly
+        - brightnessctl
+  - type: systemd
+    system:
+      enabled:
+        - ly.service
+      disabled:
+        - gdm.service

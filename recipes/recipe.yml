@@ -8,9 +8,10 @@ image-version: 43
 
 # Modules list
 modules:
-  - from-file: modules/mangonada-base.yml  
-  - from-file: modules/mangonada-dms.yml # Install Dank Material Shell
-  - from-file: modules/mangonada-mangowm.yml # Install mangowm
+  - from-file: modules/mangonada-base.yml
+  - from-file: modules/mangonada-ly.yml # ly TUI display manager
+  - from-file: modules/mangonada-mangowm.yml # MangoWM Wayland compositor
+  - from-file: modules/mangonada-noctalia.yml # Noctalia shell on top of MangoWM
   - from-file: modules/mangonada-flatpaks.yml # Default flatpaks that come preinstalled
   - from-file: modules/mangonada-brew.yml # Enabling Homebrew on image
   - from-file: modules/mangonada-fonts.yml # Adding fonts

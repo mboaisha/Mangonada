@@ -1,10 +1,10 @@
 [Unit]
-Description=Dank Material Shell (DMS)
+Description=Noctalia Shell
 PartOf=graphical-session.target
 After=graphical-session.target
 Requisite=graphical-session.target
 
 [Service]
-ExecStart=/usr/bin/dms
+ExecStart=/usr/bin/noctalia-shell
 Restart=on-failure
 RestartSec=5

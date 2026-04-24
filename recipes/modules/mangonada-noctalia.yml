@@ -1,0 +1,19 @@
+---
+
+# Install Noctalia shell (a quickshell-based Wayland shell)
+# NOTE: Noctalia is a SHELL, not a compositor. It needs a Wayland compositor
+# (Hyprland, Niri, etc.) installed alongside it to provide a usable session.
+# Add the compositor of choice as a separate module and ensure its session
+# .desktop file is shipped under /usr/share/wayland-sessions/ so ly can list it.
+modules:
+  - type: dnf
+    repos:
+      copr:
+        enable:
+          - n7-on-3o/noctalia-shell
+    install:
+      skip-unavailable: false
+      packages:
+        - noctalia-shell
+        - quickshell
+        - cliphist
